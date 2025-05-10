@@ -3,4 +3,3 @@ torchvision>=0.13.0
 numpy
 pillow
 opencv-python
-git+https://github.com/ultralytics/yolov5.git@master
