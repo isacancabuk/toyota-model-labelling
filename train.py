@@ -1,3 +1,5 @@
+import os
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 # train.py
 from ultralytics import YOLO
 
@@ -8,7 +10,7 @@ def main():
     # 2) Eğitim parametrelerini burada ver
     model.train(
         data="data.yaml",     # dataset yapılandırma dosyan
-        epochs=10,            # kaç epoch çalışsın
+        epochs=20,            # kaç epoch çalışsın
         imgsz=640,            # girdi boyutu
         batch=8,             # batch size
         device="cuda",
