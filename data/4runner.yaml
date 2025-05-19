@@ -1,5 +1,0 @@
-train: data/4runner_split/train
-val: data/4runner_split/val
-
-nc: 1
-names: ["4runner"]
