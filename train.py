@@ -13,7 +13,7 @@ def main():
         batch=8,             # batch size
         device="cuda",
         project="runs/train", # sonuçların kaydedileceği klasör
-        name="4runner-corolla"       # alt klasör ismi
+        name="final"       # alt klasör ismi
     )
 
 if __name__ == "__main__":

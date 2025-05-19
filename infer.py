@@ -3,11 +3,11 @@ from ultralytics import YOLO
 from pathlib import Path
 
 def infer(
-    model_path: str = "runs/train/4runner-corolla4/weights/best.pt",
+    model_path: str = "runs/train/final2/weights/best.pt",
     source_dir: str = "images/test",
     save_dir: str = "runs/infer",
-    run_name: str = "4runner-corolla-infer",
-    conf_thresh: float = 0.7  # <<< eşiği %70’e çekiyoruz
+    run_name: str = "final-infer",
+    conf_thresh: float = 0.5  # <<< eşiği %50’e çekiyoruz
 ):
     model = YOLO(model_path)
     results = model.predict(
